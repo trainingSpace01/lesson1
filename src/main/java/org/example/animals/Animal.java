@@ -8,4 +8,11 @@ public class Animal {
      public void run(int distance){};
      public void swim(int distance){};
 
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
 }
