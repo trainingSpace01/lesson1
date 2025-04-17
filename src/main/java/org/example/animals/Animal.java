@@ -1,18 +1,18 @@
 package org.example.animals;
 
-public class Animal {
-    String name;
-    int age;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
+import lombok.experimental.SuperBuilder;
 
-     public void voice (){};
-     public void run(int distance){};
-     public void swim(int distance){};
+@Getter
+@AllArgsConstructor
+public abstract class Animal {
+     String name;
+     int age;
 
-    public String getName() {
-        return name;
-    }
-
-    public int getAge() {
-        return age;
-    }
+     abstract public void voice (int a);
+     abstract public void run(int distance);
+     abstract public void swim(int distance);
 }

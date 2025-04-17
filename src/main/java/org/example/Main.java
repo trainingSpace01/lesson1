@@ -15,9 +15,10 @@ public class Main {
         animalList.add(new Dog("Jack", 9));
         animalList.add(new Fish("Flipper", 3));
 
-        for (int i = 0; i < animalList.size(); i++){
-            animalList.get(i).run((int) (Math.random() * 100));
-            animalList.get(i).swim((int) (Math.random() * 100));
+        for (Animal animal : animalList) {
+            animal.run((int) (Math.random() * 100));
+            animal.swim((int) (Math.random() * 100));
+            animal.voice(5);
         }
     }
 }

@@ -1,14 +1,17 @@
 package org.example.animals;
 
+import lombok.AllArgsConstructor;
+import lombok.experimental.SuperBuilder;
+
+
 public class Cat extends Animal{
 
-    public  Cat (String name, int age){
-        this.name = name;
-        this.age = age;
+    public Cat(String name, int age) {
+        super(name, age);
     }
 
     @Override
-    public void voice() {
+    public void voice(int a) {
         System.out.println("Мяв");
     }
 
@@ -21,7 +24,7 @@ public class Cat extends Animal{
         }
     }
 
-  //  @Override
+    @Override
     public void swim(int distance) {
         System.out.println("Эу братан, кошки не плавыают");
     }
