@@ -31,33 +31,4 @@ public class L2Main {
             }
         }
     }
-
-    //костыльная функция, думаю - можно придумать что-то получше, затык со списком объектов разного типа
-    /*public static boolean action(Object o, Trainer t){
-        if (o instanceof Human) {
-            if (t instanceof Wall){
-                ((Human) o).jump(((Wall)t).getHeight());
-                return ((Human) o).isSuccesChecker();
-            } else {
-                ((Human) o).run(((Treadmill)t).getDistance());
-                return ((Human) o).isSuccesChecker();
-            }
-        } else if (o instanceof Cat) {
-            if (t instanceof Wall){
-                ((Cat) o).jump(((Wall)t).getHeight());
-                return ((Cat) o).isSuccesChecker();
-            } else {
-                ((Cat) o).run(((Treadmill)t).getDistance());
-                return ((Cat) o).isSuccesChecker();
-            }
-        } else {
-            if (t instanceof Wall){
-                ((Robot) o).jump(((Wall)t).getHeight());
-                return ((Robot) o).isSuccesChecker();
-            } else {
-                ((Robot) o).run(((Treadmill)t).getDistance());
-                return ((Robot) o).isSuccesChecker();
-            }
-        }
-    }*/
 }
