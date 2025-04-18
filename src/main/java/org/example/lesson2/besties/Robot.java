@@ -3,8 +3,6 @@ package org.example.lesson2.besties;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import org.example.lesson2.interfaces.Bestie;
-import org.example.lesson2.interfaces.Jumpable;
-import org.example.lesson2.interfaces.Runnable;
 
 @AllArgsConstructor
 @Getter
