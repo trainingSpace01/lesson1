@@ -2,23 +2,25 @@ package org.example.hibernate.tables;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.springframework.stereotype.Component;
 
 @Entity
-@Table(name = "product")
+@Table(name = "products")
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
 @ToString
+@Component ("Product")
 public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column
+    @Column (name = "name")
     String name;
 
-    @OneToOne(mappedBy = "transactions")
-    private Transactions transactions;
+    @Column (name = "cost")
+    float cost;
 }
